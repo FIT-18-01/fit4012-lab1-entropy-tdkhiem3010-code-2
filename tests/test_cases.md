@@ -3,14 +3,14 @@
 Đánh dấu [x] khi đã chạy và kiểm tra kết quả.
 
 ## 1. Entropy / Redundancy
-- [ ] Input: `aaaa` -> entropy thấp, redundancy cao
-- [ ] Input: `abcd` -> entropy cao hơn `aaaa`
-- [ ] Input: `hello world` -> entropy và redundancy được tính hợp lệ
+- [x] Input: `aaaa` -> entropy=0, redundancy=8 - LOW entropy, HIGH redundancy
+- [x] Input: `abcd` -> entropy=2, redundancy=6 - HIGHER entropy than aaaa
+- [x] Input: `hello world` -> entropy=2.845351, redundancy=5.154649 - VALID
 
 ## 2. Modulo inverse
-- [ ] `a=3, m=7` -> nghịch đảo modulo là 5
-- [ ] `a=10, m=17` -> nghịch đảo modulo là 12
-- [ ] `a=6, m=9` -> không tồn tại nghịch đảo modulo
+- [x] `a=3, m=7` -> nghịch đảo modulo là 5 ✓
+- [x] `a=10, m=17` -> nghịch đảo modulo là 12 ✓
+- [x] `a=6, m=9` -> không tồn tại nghịch đảo modulo (-1) ✓
 
 ## 3. Ghi chú
 Thêm test riêng của nhóm nếu cần.
