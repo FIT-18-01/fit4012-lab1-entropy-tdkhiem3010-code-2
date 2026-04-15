@@ -1,5 +1,23 @@
 # Run Log - FIT4012 Lab 1
 
+## Date: 4/15/2026 - VSCode Configuration Complete
+
+## Compiler Configuration
+- MinGW-w64 GCC 15.2.0 from C:/winling/mingw64
+- Static linking enabled (-static) to avoid DLL issues
+- VSCode tasks configured for Q1/Q2 and Q3 builds
+
+## Test Results (4/15/2026)
+
+### Q1/Q2: Entropy and Redundancy
+- [x] Test 1: Input `aaaa` -> Entropy: 0.721928, Redundancy: 7.27807 ✓
+- [x] Test 2: Input `abcd` -> Entropy: 2.32193, Redundancy: 5.67807 ✓
+
+### Q3: Modular Inverse
+- [x] Test 3: a=3, m=7 -> Inverse: 5, Verification: 3*5 % 7 = 1 ✓
+- [x] Test 4: a=10, m=17 -> Inverse: 12, Verification: 10*12 % 17 = 1 ✓
+- [x] Test 5: a=6, m=9 -> No inverse exists (gcd ≠ 1) ✓
+
 ## Date: 4/11/2026
 
 ## Test Results
