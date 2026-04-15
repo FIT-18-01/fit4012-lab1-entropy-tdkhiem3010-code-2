@@ -30,18 +30,19 @@ int mod_inverse(int a, int m) {
     int g = extended_euclid(a, m, x, y);
     
     // Mod inverse exists only if gcd(a, m) = 1
-    if (g != 1) {
-        return -1;
+    if (g == 1) {
+        // x is the coefficient such that a*x + m*y = 1
+        // So a*x ≡ 1 (mod m), x is the modular inverse
+        // Adjust x to be in range [0, m-1]
+        int inv = x % m;
+        if (inv < 0) {
+            inv += m;
+        }
+        return inv;
     }
     
-    // x is the coefficient such that a*x + m*y = 1
-    // So a*x ≡ 1 (mod m), x is the modular inverse
-    // Adjust x to be in range [0, m-1]
-    int inv = x % m;
-    if (inv < 0) {
-        inv += m;
-    }
-    return inv;
+    // No inverse exists when gcd(a, m) != 1
+    return -1;
 }
 
 int main() {
